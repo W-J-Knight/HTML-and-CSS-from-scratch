@@ -97,3 +97,15 @@ body {
     background: var(--gradient-primary);
 }
 
+.result-summary {
+    max-width: 46rem;
+    display: grid;
+}
+
+@media (min-width: 600px) {
+    .result-summary {
+        grid-template-columns: 1fr 1fr;
+        border-radius: var(--border-radius);
+        box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-hsl-700), .2);
+    }
+}
